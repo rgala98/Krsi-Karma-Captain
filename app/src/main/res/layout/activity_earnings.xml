@@ -56,32 +56,30 @@
 
 
     <TextView
-        android:id="@+id/tv_withdraw_money"
+        android:id="@+id/tv_transactions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Withdraw Money"
         android:fontFamily="@font/roboto_medium"
-        android:clickable="true"
-        android:textSize="16dp"
-
+        android:textSize="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Your Transactions"
         android:textColor="@color/black"
-        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_earnings"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactions_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/row_transactions"
+        app:layout_constraintTop_toBottomOf="@id/tv_transactions"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_earnings"/>
-
-
-    <TextView
-        android:id="@+id/tv_money"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2000/9000"
-        android:fontFamily="@font/roboto_medium"
-        android:clickable="true"
-        android:textSize="16dp"
-        android:textColor="@color/brand_color"
-        android:textAlignment="viewEnd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_withdraw_money"/>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 

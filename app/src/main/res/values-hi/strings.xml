@@ -106,6 +106,7 @@
     <string name="this_week">इस सप्ताह</string>
     <string name="this_month">इस महीने</string>
     <string name="overall">कुल</string>
+    <string name="your_transactions">आपका लेनदेन</string>
 
     <string name="submit">प्रस्तुत करे</string>
     <string name="submitted_documents">प्रस्तुत दस्तावेज</string>
@@ -126,6 +127,12 @@
     <string name="call">कॉल</string>
     <string name="photo_note">नोट: कृपया दस्तावेज़ की स्पष्ट तस्वीर अपलोड करें। इससे हमें सत्यापन प्रक्रिया को आसान और तेज़ बनाने में मदद मिलेगी।</string>
     <string name="get_directions">दिशा - निर्देश प्राप्त करें</string>
+
+    <string name="please_let_us_know">कृपया हमें बताएं कि क्या हुआ...</string>
+
+    <string name="contact_us">संपर्क करें</string>
+    <string name="how_can_we_help">आज़ हम आपकी किस प्रकार सहायता कर सकते हैं?</string>
+    <string name="message">संदेश...</string>
 
 
 </resources>

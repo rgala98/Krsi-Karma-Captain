@@ -108,6 +108,7 @@
     <string name="this_week">This Week</string>
     <string name="this_month">This Month</string>
     <string name="overall">Overall</string>
+    <string name="your_transactions">Your Transactions</string>
 
     <string name="submit">Submit</string>
     <string name="submitted_documents">Submitted Documents</string>
@@ -119,9 +120,16 @@
     <string name="customer_details">Customer Details</string>
     <string name="are_you_sure_cancel">Are you sure you want to cancel this request?</string>
 
+    <string name="please_let_us_know">Please let us know what happened…</string>
+
+    <string name="contact_us">Contact Us</string>
+    <string name="how_can_we_help">How can we help you today?</string>
+    <string name="message">Message</string>
+
 
     <string name="cannot_accept_order">You cannot accept a new order until the current one is completed.</string>
     <string name="cancel">Cancel</string>
+
 
 
     <!--    API KEYS-->
@@ -189,7 +197,6 @@
 
     <string name="accounts" translatable="false">accounts</string>
     <string name="order_amount" translatable="false">order_amount</string>
-
 
 
 </resources>

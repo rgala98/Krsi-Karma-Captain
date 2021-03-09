@@ -131,8 +131,11 @@ public class SettingsActivity extends AppCompatActivity {
         settingNameArrayList.add(getString(R.string.account));
         settingNameArrayList.add(getString(R.string.your_orders));
         settingNameArrayList.add(getString(R.string.your_earnings));
+        settingNameArrayList.add(getString(R.string.submitted_documents));
+        settingNameArrayList.add(getString(R.string.bank_details));
         settingNameArrayList.add(getString(R.string.privacy_policy));
         settingNameArrayList.add(getString(R.string.terms_of_use));
+        settingNameArrayList.add(getString(R.string.contact_us));
         settingNameArrayList.add(getString(R.string.logout));
 
         settingsRecyclerAdapter = new SettingsRecyclerAdapter(SettingsActivity.this, settingNameArrayList);

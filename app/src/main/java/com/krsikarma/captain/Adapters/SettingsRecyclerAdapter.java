@@ -14,6 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.krsikarma.captain.Activities.AccountActivity;
+import com.krsikarma.captain.Activities.AddDocumentsActivity;
+import com.krsikarma.captain.Activities.BankDetailsActivity;
+import com.krsikarma.captain.Activities.ContactUsActivity;
 import com.krsikarma.captain.Activities.EarningsActivity;
 import com.krsikarma.captain.Activities.GetStartedActivity;
 import com.krsikarma.captain.Activities.YourOrdersActivity;
@@ -53,7 +57,7 @@ public class SettingsRecyclerAdapter extends RecyclerView.Adapter<SettingsRecycl
     public void onBindViewHolder(@NonNull SettingsRecyclerAdapter.ViewHolder holder, int position) {
         holder.tv_settings_name.setText(settingNameArrayList.get(position));
 
-        if (position == 5) {
+        if (settingNameArrayList.get(position).equals(mActivity.getString(R.string.logout))) {
             // Logout
             holder.tv_settings_name.setTextColor(mActivity.getColor(R.color.brand_color));
         }
@@ -64,6 +68,9 @@ public class SettingsRecyclerAdapter extends RecyclerView.Adapter<SettingsRecycl
 
             switch (position) {
                 case 0: //Account
+                    intent = new Intent(mActivity, AccountActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    mActivity.startActivity(intent);
                     break;
                 case 1: // Your Orders
 
@@ -77,12 +84,27 @@ public class SettingsRecyclerAdapter extends RecyclerView.Adapter<SettingsRecycl
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mActivity.startActivity(intent);
                     break;
-                case 3: //Privacy Policy
+                case 3: // Submitted Documents
+                    intent = new Intent(mActivity, AddDocumentsActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    mActivity.startActivity(intent);
                     break;
-                case 4://Terms
+                case 4:// Bank Details
+                    intent = new Intent(mActivity, BankDetailsActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    mActivity.startActivity(intent);
                     break;
-                case 5:
-                    //logout
+                case 5: //Privacy Policy
+                    break;
+                case 6: //Terms of Use
+                    break;
+                case 7: // Contact Us
+                    intent = new Intent(mActivity, ContactUsActivity.class);
+                    intent.addFlags((Intent.FLAG_ACTIVITY_NEW_TASK));
+                    mActivity.startActivity(intent);
+                    break;
+                case 8:
+                    // Logout
 
                     AlertDialog.Builder builder;
                     AlertDialog alert;

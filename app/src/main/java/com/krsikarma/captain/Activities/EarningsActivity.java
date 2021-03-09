@@ -58,11 +58,20 @@ public class EarningsActivity extends AppCompatActivity {
         earnings_tab_layout.addTab(earnings_tab_layout.newTab().setText(getString(R.string.this_week)));
         earnings_tab_layout.addTab(earnings_tab_layout.newTab().setText(getString(R.string.this_month)));
         earnings_tab_layout.addTab(earnings_tab_layout.newTab().setText(getString(R.string.overall)));
-
-        startCountAnimation(tv_earnings, 100);
-
-
         getData();
+
+
+        startCountAnimation(tv_earnings, 0);
+
+
+
+
+        // There are 4 status in total - "Received", "Cancelled", "Rejected", "Pending"
+        // User cannot request for more if one req is pending
+        // Cancel button shows only if status is pending
+
+
+
         earnings_tab_layout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -100,7 +109,6 @@ public class EarningsActivity extends AppCompatActivity {
 
             }
         });
-
 
     }
 
@@ -189,7 +197,6 @@ public class EarningsActivity extends AppCompatActivity {
                                             month_earnings = month_earnings + earnings;
                                         }
                                     }
-
 
 
 
