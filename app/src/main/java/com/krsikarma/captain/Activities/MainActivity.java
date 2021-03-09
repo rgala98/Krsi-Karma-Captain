@@ -6,6 +6,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -71,8 +72,12 @@ public class MainActivity extends AppCompatActivity {
     Boolean isCurrentOrder = false;
     String profile_img_url;
     String document_id;
+    Long order_id;
 
-    TextView tv_current_order;
+    ConstraintLayout current_order_view;
+    TextView tv_current_order_address;
+    Button btn_current_order;
+
     String phoneLanguage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,10 +102,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        tv_current_order.setOnClickListener(new View.OnClickListener() {
+        btn_current_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), OrderDetailsActivity.class);
+                intent.putExtra("order_id", order_id);
                 startActivity(intent);
             }
         });
@@ -114,7 +120,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         jobRequestArrayList = new ArrayList<>();
         main_constraint = (ConstraintLayout) findViewById(R.id.main_constraint);
-        tv_current_order = (TextView) findViewById(R.id.tv_current_order);
+
+        current_order_view = (ConstraintLayout) findViewById(R.id.current_order_view);
+        tv_current_order_address = (TextView) findViewById(R.id.tv_current_order_address);
 
         phoneLanguage = Locale.getDefault().getLanguage();
 
@@ -392,13 +400,19 @@ public class MainActivity extends AppCompatActivity {
 
                             for (QueryDocumentSnapshot doc : value) {
                                 document_id = doc.getId();
+
+                                if (doc.get(getString(R.string.order_longitude)) != null) {
+                                    order_id = doc.getLong(getString(R.string.order_id));
+                                }
                             }
 
                             //if no current order
                             if (document_id == null || document_id.isEmpty()) {
-                                tv_current_order.setVisibility(View.GONE);
+                                current_order_view.setVisibility(View.GONE);
+//                                tv_current_order.setVisibility(View.GONE);
                             } else {
-                                tv_current_order.setVisibility(View.VISIBLE);
+                                current_order_view.setVisibility(View.VISIBLE);
+//                                tv_current_order.setVisibility(View.VISIBLE);
                             }
                         }
                     });

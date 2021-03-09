@@ -67,6 +67,8 @@ public class EarningsActivity extends AppCompatActivity {
 
 
         // There are 4 status in total - "Received", "Cancelled", "Rejected", "Pending"
+        // For images there are three ic_received, ic_cancelled, ic_pending
+        // Change the color of the status_text and amount accroding to status
         // User cannot request for more if one req is pending
         // Cancel button shows only if status is pending
 

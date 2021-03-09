@@ -112,7 +112,7 @@
 
     <string name="submit">Submit</string>
     <string name="submitted_documents">Submitted Documents</string>
-    <string name="current_order"><u>Current Order</u></string>
+    <string name="current_order">Current Order</string>
 
     <string name="order_details">Order Details</string>
     <string name="order_number">Order Number</string>

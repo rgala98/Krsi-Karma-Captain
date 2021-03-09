@@ -110,7 +110,7 @@
 
     <string name="submit">प्रस्तुत करे</string>
     <string name="submitted_documents">प्रस्तुत दस्तावेज</string>
-    <string name="current_order"><u>अभी का ऑर्डर</u></string>
+    <string name="current_order">अभी का ऑर्डर</string>
 
     <string name="order_details">ऑर्डर का विवरण</string>
     <string name="order_number">ऑर्डर नंबर</string>
