@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -39,6 +40,10 @@ public class AddDocumentsActivity extends AppCompatActivity {
     String rc_url;
     String dl_url;
     String activity_from;
+
+    ImageView img_aadhar_check;
+    ImageView img_dl_check;
+    ImageView img_rc_check;
 
     Utils utils;
 
@@ -140,30 +145,28 @@ public class AddDocumentsActivity extends AppCompatActivity {
                             if (snapshot.getString(getString(R.string.aadhar_url)) != null) {
                                 aadhar_url = snapshot.getString(getString(R.string.aadhar_url));
                                 tv_aadhar_card.setTextColor(getColor(R.color.black));
-
-                                //TODO: Change to image view drawable
-                                utils.setTextViewDrawableColor(tv_aadhar_card, R.color.green);
+                                img_aadhar_check.setImageDrawable(getDrawable(R.drawable.ic_check_green));
                             } else {
                                 tv_aadhar_card.setTextColor(getColor(R.color.gray));
-                                utils.setTextViewDrawableColor(tv_aadhar_card, R.color.gray);
+                                img_aadhar_check.setImageDrawable(getDrawable(R.drawable.ic_cancelled));
                             }
 
                             if (snapshot.getString(getString(R.string.rc_url)) != null) {
                                 rc_url = snapshot.getString(getString(R.string.rc_url));
                                 tv_vehicle_rc.setTextColor(getColor(R.color.black));
-                                utils.setTextViewDrawableColor(tv_vehicle_rc, R.color.green);
+                                img_rc_check.setImageDrawable(getDrawable(R.drawable.ic_check_green));
                             } else {
                                 tv_vehicle_rc.setTextColor(getColor(R.color.gray));
-                                utils.setTextViewDrawableColor(tv_vehicle_rc, R.color.gray);
+                                img_rc_check.setImageDrawable(getDrawable(R.drawable.ic_cancelled));
                             }
 
                             if (snapshot.getString(getString(R.string.driving_license_url)) != null) {
                                 dl_url = snapshot.getString(getString(R.string.driving_license_url));
                                 tv_driving_license.setTextColor(getColor(R.color.black));
-                                utils.setTextViewDrawableColor(tv_driving_license, R.color.green);
+                                img_dl_check.setImageDrawable(getDrawable(R.drawable.ic_check_green));
                             } else {
                                 tv_driving_license.setTextColor(getColor(R.color.gray));
-                                utils.setTextViewDrawableColor(tv_driving_license, R.color.gray);
+                                img_dl_check.setImageDrawable(getDrawable(R.drawable.ic_cancelled));
                             }
                         }
                     }

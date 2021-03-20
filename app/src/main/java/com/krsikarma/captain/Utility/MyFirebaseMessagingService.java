@@ -77,7 +77,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         }
 
-        //TODO:Change Icon
         notificationBuilder = new NotificationCompat.Builder(this, "NOTIF")
                 .setSmallIcon(R.drawable.ic_notification)  //a resource for your custom small icon
                 .setContentTitle(title) //the "title" value you sent in your notification
