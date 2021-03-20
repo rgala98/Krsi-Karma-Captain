@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".Activities.EnterOtpActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_back_red_white"
+            app:layout_constraintStart_toStartOf="@id/main_layout"
+            app:layout_constraintTop_toTopOf="@id/main_layout" />
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/otp_verification_text"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="@id/main_layout"
+            app:layout_constraintTop_toBottomOf="@id/img_back" />
+
+
+        <TextView
+            android:id="@+id/tv_enter_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/enter_six_digit_otp"
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/main_layout"
+            app:layout_constraintTop_toBottomOf="@id/tv_heading" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="@id/main_layout"
+            app:layout_constraintTop_toBottomOf="@id/tv_enter_code" />
+
+        <RelativeLayout
+            android:id="@+id/number_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="@id/main_layout"
+            app:layout_constraintStart_toStartOf="@id/main_layout"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_number"
+
+            >
+
+
+            <EditText
+                android:id="@+id/et_number_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/black_border_rectangle_10"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_number_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/et_number_1"
+                android:background="@drawable/black_border_rectangle_10"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_number_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/et_number_2"
+                android:background="@drawable/black_border_rectangle_10"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_number_4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/et_number_3"
+                android:background="@drawable/black_border_rectangle_10"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_number_5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/et_number_4"
+                android:background="@drawable/black_border_rectangle_10"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_number_6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/et_number_5"
+                android:background="@drawable/black_border_rectangle_10"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/resend_text"
+            android:textColor="@color/brand_color"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@id/main_layout"
+            app:layout_constraintStart_toStartOf="@id/main_layout"
+            app:layout_constraintTop_toBottomOf="@id/number_rel" />
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/white_rectangle_100"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/verify_text"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@id/main_layout"
+            app:layout_constraintStart_toStartOf="@id/main_layout"
+            app:layout_constraintTop_toBottomOf="@id/tv_resend_code" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/brand_color"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/main_layout"
+            app:layout_constraintEnd_toEndOf="@id/main_layout"
+            app:layout_constraintStart_toStartOf="@id/main_layout"
+            app:layout_constraintTop_toTopOf="@id/main_layout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

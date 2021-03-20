@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Krsi-Karma Captain</string>
+
+    <string name="get_started">आएँ शुरू करें</string>
+    <string name="choose_language">भाषा चुनें</string>
+
+    <string name="ok_text">ठीक</string>
+    <string name="cancel_text">रद्द करें</string>
+
+    <string name="enter_mobile_number">मोबाइल नंबर दर्ज करें</string>
+    <string name="continue_text">अगला</string>
+
+    <string name="send_otp_confirm_text">हम आपको अपना मोबाइल नंबर सत्यापित करने के लिए एक ओटीपी भेजेंगे। आपको सत्यापन के लिए एसएमएस मिलेगा और मानक दरें लागू हो सकती हैं।</string>
+    <string name="send_otp_to_text">ओटीपी भेजें</string>
+
+    <string name="otp_verification_text">OTP सत्यापन</string>
+    <string name="verify_text">सत्यापित करें</string>
+    <string name="resend_text">प्राप्त नहीं हुआ? फिर भेजें</string>
+    <string name="otp_sent_text">OTP भेजा गया</string>
+    <string name="correct_otp_text">कृपया सही OTP दर्ज करें।</string>
+
+    <string name="enter_six_digit_otp">हमारे द्वारा भेजा गया 6-अंकीय कोड दर्ज करें</string>
+
+    <string name="too_many_requests_text">इस नंबर पर बहुत सारे अनुरोध भेजे गए हैं। बाद में पुन: प्रयास करें</string>
+
+    <string name="error_text">त्रुटि</string>
+    <string name="error_enter_10_digit_text">कृपया 10 अंकों का फ़ोन नंबर दर्ज करें।</string>
+    <string name="error_enter_valid_text">कृपया मान्य फोन नंबर दर्ज करें।</string>
+
+    <string name="terms_privacy_text">जारी रखकर, मैं पुष्टि करता हूं कि मैंने नियम और शर्तें और गोपनीयता नीति पढ़ ली है और इससे सहमत हूं</string>
+
+    <string name="create_profile_text">प्रोफ़ाइल बनाएं</string>
+    <string name="first_name_text">नाम</string>
+    <string name="last_name_text">उपनाम</string>
+    <string name="register_text">रजिस्टर करें</string>
+
+    <string name="add_documents">दस्तावेज़ जोड़ें</string>
+
+    <string name="car_information_text">कार की जानकारी</string>
+    <string name="brand_text">ब्रांड</string>
+    <string name="brand_example_text">टाटा, महिंद्रा, आदि..</string>
+    <string name="model_text">मॉडल</string>
+    <string name="model_example_text">सफारी, ट्रैक्टर 500, आदि..</string>
+    <string name="number_plate_text">नंबर प्लेट</string>
+    <string name="number_plate_example_text">DL05BX6372</string>
+    <string name="color_text">रंग</string>
+    <string name="color_example_text">नीला, हरा, आदि..</string>
+
+    <string name="upload">चुने</string>
+    <string name="delete">मिटा दें</string>
+
+    <string name="job_requests">सेवा के लिए अनुरोध</string>
+    <string name="time">समय</string>
+    <string name="service">सेवा</string>
+    <string name="price">कीमत</string>
+    <string name="accept">स्वीकार करो</string>
+
+    <string name="are_you_sure_logout">क्या आप लॉग आउट करना चाहते हैं?</string>
+
+    <string name="settings">सेटिंग्स</string>
+    <string name="account">खाता</string>
+    <string name="your_orders">अपके ऑर्डर</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="terms_of_use">उपयोग की शर्तें</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="profile_pic_updated">प्रोफ़ाइल चित्र अपडेट किया गया</string>
+
+    <string name="address">पता</string>
+    <string name="provide_service">कृपया चुनें कि आप कौन सी सेवाएं प्रदान करेंगे</string>
+
+    <string name="bank_details">बैंक माहीति</string>
+    <string name="bank_details_note">नोट: इन विवरणों का उपयोग आपकी सेवाओं के भुगतान के लिए किया जाएगा। कृपया सुनिश्चित करें कि आपने सही विवरण दर्ज किया है</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="bank_name">बैंक का नाम</string>
+    <string name="account_number">खाता नंबर</string>
+    <string name="ifsc_code">आई एफ एस सी कोड</string>
+    <string name="branch_name">शाखा का नाम</string>
+    <string name="acres">एकड़ जमीन</string>
+
+
+    <string name="complete_all_fields">कृपया सभी चीजों को पूरा करें</string>
+    <string name="internet_message">लगता है जैसे आप इंटरनेट से नहीं जुड़े हैं! कृपया अपना कनेक्शन जांचें!</string>
+    <string name="open_settings_permission">आपके पास स्थायी रूप से अनुमतियाँ हैं। आपको प्रोफ़ाइल सेट करने के लिए सेटिंग में अनुमतियां सक्षम करनी होंगी।</string>
+    <string name="open_settings">सेटिंग्स खोलें</string>
+
+    <string name="take_photo">फोटो लो</string>
+    <string name="choose_from_gallery">गैलरी से चयन करो</string>
+
+    <string name="updated">अद्यतन किया गया</string>
+    <string name="select_address">पता चुनें </string>
+
+    <string name="aadhar_card">आधार कार्ड</string>
+    <string name="driving_license">ड्राइविंग लाइसेंस</string>
+    <string name="registration_certificate">पंजीकरण प्रमाणपत्र</string>
+    <string name="fill_aadhar_dl">आगे बढ़ने के लिए कृपया अपना आधार कार्ड और ड्राइविंग लिसन जोड़ें।</string>
+    <string name="delete_doc">दस्तावेज़ निकालें</string>
+
+    <string name="update_app">सभी नवीनतम सुविधाओं को प्राप्त करने के लिए ऐप अपडेट करें!</string>
+    <string name="install_now">अब स्थापित करें</string>
+
+
+    <string name="your_earnings">आपकी कमाई</string>
+    <string name="today">आज</string>
+    <string name="this_week">इस सप्ताह</string>
+    <string name="this_month">इस महीने</string>
+    <string name="overall">कुल</string>
+    <string name="your_transactions">आपका लेनदेन</string>
+
+    <string name="submit">प्रस्तुत करे</string>
+    <string name="submitted_documents">प्रस्तुत दस्तावेज</string>
+    <string name="current_order">अभी का ऑर्डर</string>
+
+    <string name="order_details">ऑर्डर का विवरण</string>
+    <string name="order_number">ऑर्डर नंबर</string>
+    <string name="date">तारीख</string>
+    <string name="customer_details">ग्राहक का विवरण</string>
+    <string name="are_you_sure_cancel">क्या आप वाकई ऑर्डर रद्द करना चाहते हैं?</string>
+    <string name="are_you_sure_cancel_withdraw_request">क्या आप वाकई इस अनुरोध को रद्द करना चाहते हैं? इसकी पुष्टि करने पर, अनुरोध की गई राशि को आपके कृति कर्म खाते में वापस जमा कर दिया जाएगा। आप हमेशा बाद में राशि का अनुरोध कर सकते हैं।</string>
+    <string name="are_you_sure_end">क्या आप वाकई सेवा पूर्ण कर चुके हैं?</string>
+    <string name="end_order_note">आपने सेवा पूरी कर ली है। कृपया ग्राहक से अनुरोध करें कि वह भुगतान के साथ आगे बढ़े।</string>
+    <string name="collect_cash">मैं कैश ले रहा हूं</string>
+    <string name="are_you_sure_collect_cash">क्या आप सुनिश्चित हैं कि आपने नकदी एकत्र की है?</string>
+
+
+    <string name="cancel">रद्द करें</string>
+    <string name="ordered_on">ऑर्डर की तारीख</string>
+    <string name="raise_a_complaint">शिकायत दर्ज करें</string>
+
+    <string name="cannot_accept_order">जब तक करंट पूरा नहीं हो जाता, आप एक नया ऑर्डर स्वीकार नहीं कर सकते।</string>
+
+    <string name="call">कॉल</string>
+    <string name="photo_note">नोट: कृपया दस्तावेज़ की स्पष्ट तस्वीर अपलोड करें। इससे हमें सत्यापन प्रक्रिया को आसान और तेज़ बनाने में मदद मिलेगी।</string>
+    <string name="get_directions">दिशा - निर्देश प्राप्त करें</string>
+
+    <string name="please_let_us_know">कृपया हमें बताएं कि क्या हुआ...</string>
+
+    <string name="contact_us">संपर्क करें</string>
+    <string name="how_can_we_help">आज़ हम आपकी किस प्रकार सहायता कर सकते हैं?</string>
+    <string name="message">संदेश...</string>
+    <string name="message_sent">हमसे संपर्क करने के लिए धन्यवाद! हम शीघ्र ही आपके पास पहुंचेंगे।</string>
+    <string name="done">अच्छा</string>
+    <string name="update">अपडेट करें</string>
+
+    <string name="request_cancelled">आपका अनुरोध रद्द कर दिया गया है</string>
+    <string name="cancel_request"> रद्द करें अनुरोध </string>
+    <string name="do_not_wish_to_cancel"> रद्द करने की इच्छा न करें </string>
+
+    <string name="document_verified_message">आपके दस्तावेज़ को व्यवस्थापक द्वारा सत्यापित किया गया है और इसलिए इसे अपडेट नहीं किया जा सकता है।</string>
+
+    <string name="start">शुरू करो</string>
+    <string name="end">समाप्त करो</string>
+    <string name="request">अनुरोध करे</string>
+    <string name="amount_remaining_with_us">हमारे साथ शेष राशि</string>
+
+    <string name="payment">भुगतान</string>
+    <string name="paid_via">भुगतान माध्यम:</string>
+    <string name="order_completed">आर्डर पूरा हुआ</string>
+
+    <string name="payment_note"> नोट: भुगतान ग्राहक द्वारा ऑनलाइन किया जा सकता है या आप यात्रा पर नकदी एकत्र कर सकते हैं। </string>
+
+
+</resources>

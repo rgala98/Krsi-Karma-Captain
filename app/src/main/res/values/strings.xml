@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">Krsi-Karma Captain</string>
+
+    <string name="get_started">Lets get started</string>
+    <string name="choose_language">Choose Language</string>
+
+    <string name="ok_text">OK</string>
+    <string name="cancel_text">Cancel</string>
+
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="continue_text">Continue</string>
+
+    <string name="send_otp_confirm_text">We will send you an OTP to verify your mobile number. You will receive SMS for verification and standard rates may apply.</string>
+    <string name="send_otp_to_text">Send OTP to</string>
+
+    <string name="otp_verification_text">OTP Verification</string>
+    <string name="verify_text">Verify</string>
+    <string name="resend_text">Didnt receive? Resend</string>
+    <string name="otp_sent_text">OTP Sent</string>
+    <string name="correct_otp_text">Please enter the correct OTP.</string>
+
+    <string name="enter_six_digit_otp">Enter the 6-digit code we sent you at</string>
+
+    <string name="too_many_requests_text">Too many requests have been sent on this number. Please try again later</string>
+
+
+    <string name="error_text">Error</string>
+    <string name="error_enter_10_digit_text">Please enter a 10 digit phone number.</string>
+    <string name="error_enter_valid_text">Please enter a valid phone number.</string>
+
+    <string name="terms_privacy_text">By continuing, I confirm that I have read and agree to the Terms and Conditions and Privacy Policy</string>
+
+    <string name="create_profile_text">Create Profile</string>
+    <string name="first_name_text">First Name</string>
+    <string name="last_name_text">Last Name</string>
+    <string name="register_text">Register</string>
+
+
+    <string name="add_documents">Add Documents</string>
+
+    <string name="car_information_text">Car Information</string>
+    <string name="brand_text">Brand</string>
+    <string name="brand_example_text">Tata, Mahindra, etc..</string>
+    <string name="model_text">Model</string>
+    <string name="model_example_text">Safari, Tractor 500, etc..</string>
+    <string name="number_plate_text">Number Plate</string>
+    <string name="number_plate_example_text">DL05BX6372</string>
+    <string name="color_text">Color</string>
+    <string name="color_example_text">Blue, Green, etc..</string>
+
+    <string name="upload">Upload</string>
+    <string name="delete">Delete</string>
+
+    <string name="job_requests">Job Requests</string>
+    <string name="time">Time</string>
+    <string name="service">Service</string>
+    <string name="price">Price</string>
+    <string name="accept">Accept</string>
+    <string name="acres">Acres</string>
+    <string name="call">Call</string>
+    <string name="are_you_sure_logout">Are you sure you want to logout?</string>
+
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="your_orders">Your Orders</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="logout">Logout</string>
+    <string name="profile_pic_updated">Profile Picture Updated</string>
+
+    <string name="address">Address</string>
+    <string name="provide_service">Please select which services will you be providing</string>
+
+    <string name="bank_details">Bank Details</string>
+    <string name="bank_details_note">Note: These details will be used for paying for your services. Please make sure you enter correct details</string>
+    <string name="full_name">Full Name</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="branch_name">Branch Name</string>
+
+
+    <string name="complete_all_fields">Please complete all fields</string>
+    <string name="internet_message">Seems like you are not connected to the internet! Kindly check your connection!</string>
+
+    <string name="open_settings_permission">You have permanently denied permissions. You will have to enable permissions at settings to set profile. </string>
+    <string name="open_settings">Open Settings</string>
+
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="select_address">Select Address</string>
+    <string name="updated">Updated</string>
+    <string name="ordered_on">Ordered On</string>
+    <string name="raise_a_complaint">Raise a Complaint</string>
+
+    <string name="aadhar_card">Aadhar Card</string>
+    <string name="driving_license">Driving License</string>
+    <string name="registration_certificate">Registration Certificate</string>
+    <string name="fill_aadhar_dl">Please add your aadhar card and driving license to proceed.</string>
+    <string name="delete_doc">Delete Document</string>
+
+    <string name="update_app">Update app to get all the latest features!</string>
+    <string name="install_now">Install Now</string>
+    <string name="photo_note">Note: Please upload a clear picture of the document. This will help us to make the verification process easier and faster.</string>
+
+    <string name="your_earnings">Your Earnings</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="this_month">This Month</string>
+    <string name="overall">Overall</string>
+    <string name="your_transactions">Your Transactions</string>
+
+    <string name="submit">Submit</string>
+    <string name="submitted_documents">Submitted Documents</string>
+    <string name="current_order">Current Order</string>
+
+    <string name="order_details">Order Details</string>
+    <string name="order_number">Order Number</string>
+    <string name="date">Date</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="are_you_sure_cancel">Are you sure you want to cancel the order?</string>
+    <string name="are_you_sure_cancel_withdraw_request">Are you sure you want to cancel this request? On confirming this, the requested amount will be credited back to your Krsi karma account. You can always request the amount later.</string>
+    <string name="are_you_sure_end">Are you sure you have completed the service?</string>
+    <string name="end_order_note">You have completed the service. Please request the client to proceed with the payment.</string>
+
+    <string name="collect_cash">I am collecting cash</string>
+    <string name="are_you_sure_collect_cash">Are you sure you have collected the cash?</string>
+    <string name="please_let_us_know">Please let us know what happened…</string>
+
+    <string name="contact_us">Contact Us</string>
+    <string name="how_can_we_help">How can we help you today?</string>
+    <string name="message">Message</string>
+    <string name="message_sent">Thank you for contacting us! We will reach out to you shortly.</string>
+
+
+    <string name="cannot_accept_order">You cannot accept a new order until the current one is completed.</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="update">Update</string>
+    <string name="request_cancelled">Your request is cancelled</string>
+    <string name="do_not_wish_to_cancel">Do not wish to cancel</string>
+    <string name="cancel_request">Cancel Request</string>
+
+    <string name="document_verified_message">Your document is verified by the admin and hence cannot be updated.</string>
+
+    <string name="start">Start Order</string>
+    <string name="end">End Order</string>
+    <string name="request">Request</string>
+    <string name="amount_remaining_with_us">Amount remaining with us</string>
+
+
+    <string name="get_directions">Get Directions</string>
+    <string name="payment">payment</string>
+    <string name="paid_via">Paid via</string>
+    <string name="order_completed">Order Completed</string>
+    <string name="payment_note">Note: The payment can be done online by the client or you can collect the cash on visit.</string>
+
+
+    <!--    API KEYS-->
+    <string name="PLACES_API_KEY" translatable="false">AIzaSyAl_W-16U6yJI1RLf0gZdDd_IHoXFNi6L0</string>
+
+    <!--    firebase strings-->
+
+    <string name="users" translatable="false">users</string>
+    <string name="user_id" translatable="false">user_id</string>
+    <string name="first_name" translatable="false">first_name</string>
+    <string name="last_name" translatable="false">last_name</string>
+    <string name="user_address" translatable="false">address</string>
+    <string name="profile_img_url" translatable="false">profile_img_url</string>
+    <string name="date_created" translatable="false">date_created</string>
+    <string name="phone_number" translatable="false">phone_number</string>
+
+    <string name="services" translatable="false">services</string>
+    <string name="service_description" translatable="false">description</string>
+    <string name="image_url" translatable="false">image_url</string>
+    <string name="metric" translatable="false">metric</string>
+    <string name="name" translatable="false">name</string>
+    <string name="rate" translatable="false">rate</string>
+    <string name="service_id" translatable="false">service_id</string>
+    <string name="selected_service_type" translatable="false">selected_service_type</string>
+    <string name="user_name" translatable="false">user_name</string>
+    <string name="service_name" translatable="false">service_name</string>
+
+
+    <string name="orders" translatable="false">orders</string>
+    <string name="order_id" translatable="false">order_id</string>
+    <string name="partner_id" translatable="false">partner_id</string>
+    <string name="order_date_time" translatable="false">order_date_time</string>
+    <string name="order_time" translatable="false">order_time</string>
+    <string name="order_status" translatable="false">order_status</string>
+    <string name="order_address" translatable="false">order_address</string>
+    <string name="order_quantity" translatable="false">order_quantity</string>
+    <string name="order_rate" translatable="false">order_rate</string>
+    <string name="order_metric" translatable="false">order_metric</string>
+    <string name="order_latitude" translatable="false">order_latitude</string>
+    <string name="order_longitude" translatable="false">order_longitude</string>
+    <string name="order_postal_code" translatable="false">order_postal_code</string>
+    <string name="payment_mode" translatable="false">payment_mode</string>
+
+
+    <string name="partners" translatable="false">partners</string>
+    <string name="latitude" translatable="false">latitude</string>
+    <string name="longitude" translatable="false">longitude</string>
+    <string name="aadhar_url" translatable="false">aadhar_url</string>
+    <string name="driving_license_url" translatable="false">driving_license_url</string>
+    <string name="rc_url" translatable="false">registration_certificate_url</string>
+    <string name="bank_full_name" translatable="false">bank_full_name</string>
+    <string name="fb_bank_name" translatable="false">bank_name</string>
+    <string name="fb_account_no" translatable="false">account_no</string>
+    <string name="fb_ifsc_code" translatable="false">ifsc_code</string>
+    <string name="fb_branch_name" translatable="false">branch_name</string>
+    <string name="is_driver_approved" translatable="false">is_driver_approved</string>
+    <string name="is_aadhar_verified" translatable="false">is_aadhar_verified</string>
+    <string name="is_dl_verified" translatable="false">is_dl_verified</string>
+    <string name="is_rc_verified" translatable="false">is_rc_verified</string>
+
+    <string name="order_status_type_completed" translatable="false">Completed</string>
+    <string name="order_status_type_ongoing" translatable="false">On Going</string>
+    <string name="order_status_type_cancelled" translatable="false">Cancelled</string>
+    <string name="order_status_type_requested" translatable="false">Requested</string>
+    <string name="order_status_type_payment_pending" translatable="false">Payment Pending</string>
+    <string name="order_status_type_driver_assigned" translatable="false">Driver Assigned</string>
+
+
+    <string name="accounts" translatable="false">accounts</string>
+    <string name="order_amount" translatable="false">order_amount</string>
+
+    <string name="contact_us_fb" translatable="false">contact_us</string>
+    <string name="user_type" translatable="false">user_type</string>
+    <string name="message_fb" translatable="false">message</string>
+
+    <string name="withdraw_requests" translatable="false">withdraw_requests</string>
+    <string name="request_amount" translatable="false">request_amount</string>
+    <string name="request_status" translatable="false">request_status</string>
+
+    <string name="cash" translatable="false">cash</string>
+    <string name="online" translatable="false">online</string>
+
+    <string name="withdraw_request_complaints" translatable="false">withdraw_request_complaints</string>
+    <string name="withdraw_request_document_id" translatable="false">withdraw_request_document_id</string>
+    <string name="withdraw_request_date" translatable="false">withdraw_request_date</string>
+
+
+</resources>
