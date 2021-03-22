@@ -73,6 +73,7 @@ public class TransactionRecyclerAdapter extends RecyclerView.Adapter<Transaction
         if (transaction.getRequest_status().equalsIgnoreCase("pending")) {
             holder.img_status.setImageResource(R.drawable.ic_pending);
             holder.tv_amount.setTextColor(mActivity.getColor(R.color.yellow));
+            holder.btn_cancel.setVisibility(View.VISIBLE);
         } else if (transaction.getRequest_status().equalsIgnoreCase("rejected")) {
 
             holder.img_status.setImageResource(R.drawable.ic_cancelled);

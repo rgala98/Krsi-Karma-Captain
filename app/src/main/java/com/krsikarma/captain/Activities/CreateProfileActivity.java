@@ -493,7 +493,7 @@ public class CreateProfileActivity extends AppCompatActivity {
                                         Log.d(TAG, "DocumentSnapshot successfully written!");
                                         finishAffinity();
                                         Intent intent = new Intent(getApplicationContext(), AddDocumentsActivity.class);
-                                        intent.putExtra("activity_from", "CreateProfileActivity");
+                                        intent.putExtra("activity_from", "FromCreateProfile");
                                         startActivity(intent);
                                     }
                                 })

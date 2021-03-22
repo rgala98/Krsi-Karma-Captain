@@ -86,14 +86,16 @@ public class AddDocumentsActivity extends AppCompatActivity {
 
         getData();
 
-        if(activity_from.equals("CreateProfileActivity")){
+        //TODO: THIS IS A FLAW
+
+        if(activity_from.equals("FromCreateProfile")){
             btn_register.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     if (aadhar_url != null && !aadhar_url.isEmpty() && dl_url != null && !dl_url.isEmpty()) {
                         finishAffinity();
                         Intent intent = new Intent(getApplicationContext(), BankDetailsActivity.class);
-                        intent.putExtra("activity_from", "AddDocumentsActivity");
+                        intent.putExtra("activity_from", "FromAddDocuments");
                         startActivity(intent);
 
                     } else {
@@ -121,6 +123,10 @@ public class AddDocumentsActivity extends AppCompatActivity {
         tv_vehicle_rc = (TextView) findViewById(R.id.tv_vehicle_rc);
         btn_register = (Button) findViewById(R.id.btn_register);
 
+        img_aadhar_check = (ImageView) findViewById(R.id.img_aadhar_check);
+        img_dl_check = (ImageView) findViewById(R.id.img_dl_check);
+        img_rc_check = (ImageView) findViewById(R.id.img_rc_check);
+
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
         firebaseUser = mAuth.getCurrentUser();
@@ -128,7 +134,9 @@ public class AddDocumentsActivity extends AppCompatActivity {
         utils = new Utils();
 
         activity_from = getIntent().getStringExtra("activity_from");
-
+        if (activity_from == null) {
+            activity_from = "";
+        }
     }
 
     private void getData() {
@@ -185,5 +193,9 @@ public class AddDocumentsActivity extends AppCompatActivity {
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

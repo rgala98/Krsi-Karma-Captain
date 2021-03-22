@@ -116,6 +116,9 @@ public class BankDetailsActivity extends AppCompatActivity {
         firebaseUser = mAuth.getCurrentUser();
 
         activity_from = getIntent().getStringExtra("activity_from");
+        if(activity_from == null){
+            activity_from = "";
+        }
     }
 
     private void getData(){
@@ -162,7 +165,9 @@ public class BankDetailsActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void aVoid) {
                         progressBar.setVisibility(View.GONE);
-                        if(activity_from.equals("AddDocumentsActivity")) {
+
+                        //TODO: THIS IS A FLAW
+                        if(activity_from.equals("FromAddDocuments")) {
                             finishAffinity();
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(intent);

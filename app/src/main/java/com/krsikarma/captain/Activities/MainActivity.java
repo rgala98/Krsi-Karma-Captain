@@ -80,6 +80,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import javax.security.auth.login.LoginException;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "MainActivity";
@@ -243,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
 
                     } else {
                         //snapshot exists
-                        //check is documents are added
+                        //check if documents are added
                         if (snapshot.getString(getString(R.string.aadhar_url)) == null) {
                             finishAffinity();
                             Intent intent = new Intent(getApplicationContext(), AddDocumentsActivity.class);
@@ -482,7 +484,7 @@ public class MainActivity extends AppCompatActivity {
                                 Log.e(TAG, "Error is ", error);
                                 return;
                             }
-
+                            document_id = "";
                             for (QueryDocumentSnapshot doc : value) {
                                 if(doc.get(getString(R.string.order_status))!=null){
                                     if(doc.get(getString(R.string.order_status)).equals(getString(R.string.order_status_type_driver_assigned))
@@ -508,6 +510,7 @@ public class MainActivity extends AppCompatActivity {
                             }
 
                             //if no current order
+                            Log.i(TAG, "onEvent: DOC ID IS" + document_id);
                             if (document_id == null || document_id.isEmpty()) {
                                 current_order_view.setVisibility(View.GONE);
 
@@ -655,6 +658,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }else{
             checkForLogOut();
+            checkForCurrentOrder();
         }
     }
 
